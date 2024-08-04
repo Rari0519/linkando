@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+ul {
+  height: 100%;
+  list-style: none;
+  align-content: flex-end;
+}
+
+li {
+  transition: 0.4s;
+}
+
+li:hover {
+  background: #6ef76b;
+}
+
+i {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 4%;
+  display: flex;
+  line-height: 40px;
+}
+a .txt-link {
+  margin-left: 40px;
+  transition: 1s;
+  opacity: 0;
+}
+
+a:hover {
+  color: #00b039;
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+}
+
+.menu {
+  width: 65px;
+  height: 100%;
+  background-color: #809671;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0px #6ef76b;
+  position: fixed;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.menu-expandir {
+  width: 100%;
+  align-items: center;
+}
+.menu.menu-expandir {
+  width: 300px;
+  align-items: center;
+}
+.menu.menu-expandir .txt-link {
+  margin-left: 20px;
+  transition: 1s;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

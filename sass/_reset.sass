@@ -1,0 +1,73 @@
+// reset
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Inria Sans', sans-serif
+
+.container
+    height: 100vh
+    width: 100vw
+    background-color: $background-color
+
+ul
+    height: 100%
+    list-style: none
+    align-content: flex-end
+
+li
+    transition: 0.4s
+
+li:hover
+    background:$background-list
+
+i
+    color: $background-color
+    font-size: 30px
+    cursor: pointer
+    transition: transform 0.3s ease
+    align-items: center
+
+a
+    color: $background-color
+    text-decoration: none
+    font-size: 20px
+    font-weight: 600
+    padding: 15px 4%
+    display: flex
+    line-height: 40px
+
+    .txt-link
+        margin-left: 40px
+        transition: 1s
+        opacity: 0
+
+
+a:hover
+    color: $text-hover
+    transform: translateX(20px)
+    transition: transform 0.3s ease
+
+// sideBar
+.menu
+    width: 65px
+    height: 100%
+    background-color: $sidebar
+    padding: 40px 0 40px 1%
+    box-shadow: 3px 0 0px $background-list
+    position: fixed
+    overflow: hidden
+    transition: 0.8s
+
+    &-expandir
+        width: 100%
+        align-items: center
+
+    &.menu-expandir
+        width: 300px
+        align-items: center
+
+        .txt-link
+            margin-left: 20px
+            transition: 1s
+            opacity: 1
