@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+}
+
+header {
+    height: 116px;
+    background: #8AA578;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    position: relative;
+}
+
+header img {
+    width: 90px;
+}
+
+.site_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 60px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.login_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.login_btn a {
+    color: #725C3A;
+    text-decoration: none;
+    background: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 2em;
+}
+
+.start {
+    width: 100vw;
+    height: 650px;
+    overflow: hidden;
+    background-image: url(imgs/student1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+.start-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px;
+    width: 100vw;
+    color: #fff;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+
+.block1 {
+    position:absolute;
+    width: 224px;
+    height: 84px;
+    top: 670px;
+    left: -63px;
+    background: #6C7E60;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block2 {
+    position: absolute;
+    width: 262px;
+    height: 118px;
+    top: 700px;
+    left: 49px;
+    background: #8AA578;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block3 {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+    top: 720px;
+    left: 29px;
+    background: #725C3A;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block4 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 780px;
+    background: #B3B792;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block5 {
+    position:absolute;
+    width: 328px;
+    height: 105px;
+    top: 700px;
+    right: 5px;
+    background: #889671;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block6 {
+    position:absolute;
+    width: 160px;
+    height: 100px;
+    top: 785px;
+    right: 0px;
+    background: #6C7E60;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block7 {
+    position: absolute;
+    width: 66px;
+    height: 68px;
+    top: 740px;
+    right: 0px;
+    background: #725C3A;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.know_us {
+    margin-top: 120px;
+}
