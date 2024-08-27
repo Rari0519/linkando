@@ -37,15 +37,15 @@ header img {
 
 .container {
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 3fr 5fr;
     grid-template-rows: 100vh;
 }
 
 
 .data {
-    background-image: url(student.png);
+    background-image: url(teacher.png);
     background-size: cover;
-    background-position: bottom right;
+    background-position: bottom left 15%;
     background-repeat: no-repeat;
     display: flex;
 }
@@ -84,6 +84,7 @@ header img {
     color:#725C3A;
     font-size: 100px;
  }
+
 
 #desc  {
     margin-top: 20px;
