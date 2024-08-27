@@ -37,53 +37,18 @@ header img {
 
 .container {
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 3fr 5fr;
     grid-template-rows: 100vh;
 }
 
 
 .data {
-    background-image: url(student.png);
+    background-image: url(teacher.png);
     background-size: cover;
-    background-position: bottom right;
+    background-position: bottom left 15%;
     background-repeat: no-repeat;
     display: flex;
 }
-
-.data_shadow {
-    padding-top: 130px;
-    background: #00000080;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-size: 1.8em;
-    gap: 35px;
-}
-
-.add_img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.img_input {
-    background: #fff;
-    width: 275px;
-    height: 271px;
-    border-radius: 34px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
- .data i {
-    color:#725C3A;
-    font-size: 100px;
- }
 
 #desc  {
     margin-top: 20px;
