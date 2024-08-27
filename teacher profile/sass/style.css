@@ -10,8 +10,12 @@
   height: 100vh;
   width: 100vw;
   background-color: #fff;
+  display: flex;
+  flex-direction: row;
 }
 
+
+/* aqui comeca a sidebar */
 ul {
   height: 100%;
   list-style: none;
@@ -20,17 +24,19 @@ ul {
 
 li {
   transition: 0.4s;
+  padding-left: 5px;
 }
 
 li:hover {
-  background: #6ef76b;
+  background: #90a583;
+
 }
 
 i {
   color: #fff;
   font-size: 30px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   align-items: center;
 }
 
@@ -50,27 +56,25 @@ a .txt-link {
 }
 
 a:hover {
-  color: #00b039;
-  transform: translateX(20px);
+  transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
 
 .menu {
-  width: 65px;
+  width: 85px;
   height: 100%;
   background-color: #809671;
-  padding: 40px 0 40px 1%;
-  box-shadow: 3px 0 0px #6ef76b;
-  position: fixed;
+  padding: 5px 0 40px 0;
   overflow: hidden;
   transition: 0.8s;
 }
 .menu-expandir {
   width: 100%;
   align-items: center;
+  padding-left: 5px;
 }
 .menu.menu-expandir {
-  width: 300px;
+  width: 500px;
   align-items: center;
 }
 .menu.menu-expandir .txt-link {
@@ -78,3 +82,105 @@ a:hover {
   transition: 1s;
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */
+
+/* aqui acaba a sidebar */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+
+.head{
+  background: #B3B792;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  height: 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.searchbar i {
+  color: #B8B8B8;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.searchbar input {
+  margin: 2px 0 2px 0;
+  border: none;
+  border-right: 1px solid #B8B8B8;
+  background: transparent;
+  width: 100%;
+  font-size: 1em;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.content {
+  padding: 25px;
+  display: grid;
+  grid-template-areas:
+  "cursopop cursovc forumprof"
+  "cursoslec cursoslec cursoslec";
+  grid-template-rows: 500px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  color: #fff;
+}
+
+.cursopop, .cursovc, .forumprof, .cursoslec {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 0;
+}
+
+.cursopop {
+  grid-area: cursopop;
+  background-image: url(img/img1.jpeg);
+}
+
+.cursovc {
+  grid-area: cursovc;
+  background-image: url(img/img2.png);
+}
+
+.forumprof {
+  grid-area: forumprof;
+  background-image: url(img/img3.png);
+}
+
+.cursoslec {
+  grid-area: cursoslec;
+  background-image: url(img/img4.png);
+  background-position: center bottom 55%;
+}
+
+.curso_shadow {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  border-radius: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
