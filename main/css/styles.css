@@ -14,7 +14,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0px 4px 4px 0px #00000040;
-    position: relative;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
 }
 
 header img {
@@ -28,6 +30,8 @@ header img {
     margin-left: 60px;
     letter-spacing: 4px;
     color: #fff;
+    font-size: 1.5em;
+    gap: 10px;
 }
 
 .login_btn {
@@ -41,25 +45,23 @@ header img {
     color: #725C3A;
     text-decoration: none;
     background: #fff;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 2px 30px 2px 30px;
     border-radius: 30px;
     box-shadow: 0px 4px 4px 0px #00000040;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .start {
-    width: 100vw;
     height: 650px;
     overflow: hidden;
     background-image: url(imgs/student1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    text-align: center;
     
 }
 
@@ -67,17 +69,25 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 80px;
+    padding-bottom: 80px;
+    font-size: 1.8em;
     width: 100vw;
     color: #fff;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6),
+     rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+}
+
+.blocks {
+    z-index: 1;
 }
 
 .block1 {
     position:absolute;
-    width: 224px;
-    height: 84px;
-    top: 670px;
+    width: 300px;
+    height: 90px;
+    top: 542px;
     left: -63px;
     background: #6C7E60;
     box-shadow: 0px 4px 4px 0px #00000040;
@@ -85,38 +95,38 @@ header img {
 
 .block2 {
     position: absolute;
-    width: 262px;
-    height: 118px;
-    top: 700px;
-    left: 49px;
+    width: 380px;
+    height: 160px;
+    top: 577px;
+    left: 75px;
     background: #8AA578;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .block3 {
     position: absolute;
-    width: 40px;
-    height: 44px;
-    top: 720px;
-    left: 29px;
+    width: 60px;
+    height: 64px;
+    top: 594px;
+    left: 50px;
     background: #725C3A;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .block4 {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 780px;
+    width: 125px;
+    height: 125px;
+    top: 682px;
     background: #B3B792;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .block5 {
     position:absolute;
-    width: 328px;
+    width: 460px;
     height: 105px;
-    top: 700px;
+    top: 582px;
     right: 5px;
     background: #889671;
     box-shadow: 0px 4px 4px 0px #00000040;
@@ -124,9 +134,9 @@ header img {
 
 .block6 {
     position:absolute;
-    width: 160px;
-    height: 100px;
-    top: 785px;
+    width: 250px;
+    height: 125px;
+    top: 657px;
     right: 0px;
     background: #6C7E60;
     box-shadow: 0px 4px 4px 0px #00000040;
@@ -134,14 +144,225 @@ header img {
 
 .block7 {
     position: absolute;
-    width: 66px;
-    height: 68px;
-    top: 740px;
+    width: 80px;
+    height: 80px;
+    top: 622px;
     right: 0px;
     background: #725C3A;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
+.block8 {
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    top: 1332px;
+    background: #809671;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block9 {
+    position: absolute;
+    width: 380px;
+    height: 8px;
+    top: 1342px;
+    left: -20px;
+    background: #6C7E60;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block10 {
+    position: absolute;
+    width: 380px;
+    height: 100px;
+    top: 2402px;
+    left: -200px;
+    background: #889671;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block11 {
+    position: absolute;
+    width: 190px;
+    height: 63px;
+    top: 2464px;
+    left: -144px;
+    background: #725C3A;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block12 {
+    position: absolute;
+    width: 305px;
+    height: 70px;
+    top: 2492px;
+    left: 25px;
+    background: #6C7E60;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block13 {
+    position: absolute;
+    width: 30px;
+    height: 9px;
+    top: 2517px;
+    right: 0px;
+    background: #725C3A;
+    box-shadow: 0px 4px 4px 0px #00000040;;
+}
+
+.block14 {
+    position: absolute;
+    width: 800px;
+    height: 8px;
+    top: 2529px;
+    right: 0px;
+    background: #6C7E60;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block15 {
+    position: absolute;
+    width: 670px;
+    height: 8px;
+    top: 2539px;
+    right: 0px;
+    background: #8AA578;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
 .know_us {
-    margin-top: 120px;
+    margin: 50px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    color: #373737;
+    font-size: 2em;
+}
+
+.know_us_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #373737;
+}
+
+.know_us_text h1 {
+    color: #725C3A;
+}
+
+.know_us_text a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #725C3A;
+    border-radius: 30px;
+    box-shadow: 0px 7px 5px 0px #00000040;
+    padding: 10px 70px 10px 70px;
+}
+
+.know_us_img {
+    background-image: url(imgs/student2.png);
+    background-position: 65% 50%;
+    width: 650px;
+    height: 550px;
+    border-radius: 37px;
+}
+
+.nossas_redes img {
+    width: 200px;
+    border-radius: 40px;
+}
+.nossas_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: #725C3A;
+}
+
+.redes_title {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+    font-size: 1.5em;
+}
+
+.insta, .face, .twitter, .ytbe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 50px 0px 50px;
+}
+
+.perguntas_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    text-align: center;
+    font-size: 2em;
+    color: #725C3A;
+}
+
+.perguntas_text h2 {
+    color: #373737;
+    margin-top: 40px;
+}
+
+.perguntas_img {
+    background-image: url(imgs/student3.png);
+    background-position: bottom center;
+    border-radius: 38px;
+    width: 1000px;
+    height: 600px;
+}
+
+.prof_register {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #F0F0F0;
+    color: #725C3A;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.prof_register h2 {
+    color: #373737;
+}
+
+.prof_register a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+    background: #725C3A;
+    border-radius: 51px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 20px 320px 20px 320px;
 }
